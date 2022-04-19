@@ -1,0 +1,365 @@
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'Ballpark';
+    src: url('../polices/ballpark.eot');
+    src: url('../polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('../polices/ballpark.woff') format('woff'),
+         url('../polices/ballpark.ttf') format('truetype'),
+         url('../polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('../polices/dayrom.eot');
+    src: url('../polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('../polices/dayrom.woff') format('woff'),
+         url('../polices/dayrom.ttf') format('truetype'),
+         url('../polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+  background-image: url("../images/fond_jaune.png");
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #181818;
+  overflow-x: hidden;
+}
+
+#bloc_page {
+  margin: auto;
+}
+
+a:hover, .liens:hover, #this:hover {
+  color: #99130B;
+  text-decoration: underline;
+}
+
+.separateur {
+  background-image: url("../images/separateur.png");
+  background-repeat: repeat-x;
+  width:100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+}
+
+
+
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+#entete {
+  width: 50%;
+  margin: auto;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 4%;
+}
+
+#logo_zozor {
+  display: flex;
+  margin-right: 7%;
+}
+
+#Zozor {
+  align-self: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  text-align: right;
+  margin: auto;
+  margin-right: auto;
+  margin-left: 5%;
+  font-size: 2.7em;
+  font-family: 'Ballpark';
+  font-weight: normal;
+  width: 40%;
+}
+#carnet {
+  width: 60%;
+  font-family: 'Dayrom';
+  font-weight: 500;
+  font-size: 1.5em;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 4%;
+  margin-left: 4%;
+  margin-right: auto;
+  display: flex;
+}
+
+nav {
+  flex: 1;
+  margin-left: auto;
+  margin-right: 11%
+}
+#menu_principal {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 7%;
+  margin-right: 11%;
+  justify-content: space-around;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  font-family: 'Dayrom';
+}
+.menu {
+  color: black;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-family: 'Dayrom';
+}
+
+
+.liens, #this {
+  color: #BB352D;
+  text-decoration: underline;
+}
+
+#banniere_sanfrancisco {
+  width: 950px;
+  height: 219px;
+  display: flex;
+  margin: auto;
+  margin-top: 2%;
+  background-image: url("../images/sanfrancisco.jpg");
+  background-repeat: no-repeat;
+  box-shadow: 0px 2px 3px grey;
+  border-radius: 5px;
+}
+#bandeau {
+  width: 950px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0px 0px 5px 5px;
+}
+#us {
+  color: white;
+  margin: auto;
+  margin-left: 1%;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-weight: normal;
+}
+#voir_article {
+  height: 29px;
+  width: 13%;
+  display: flex;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 1%;
+  background-image: url("../images/rouge.png");
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 0.9em;
+  color: white;
+  text-decoration: none;
+}
+
+
+section {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: row;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: auto;
+  margin-right: 1%;;
+  margin-left: 7%;
+  width: 62%;
+}
+
+#epingle {
+  margin-right: 2%;
+}
+
+#grand {
+  font-family: 'Dayrom';
+  display: flex;
+  align-items: flex-end;
+  text-align: justify;
+}
+
+.texte {
+  text-align: justify;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-weight: normal;
+}
+.txt {
+  height: 80%;
+}
+
+#bulle {
+  width: 12px;
+  height: 17px;
+  display: flex;
+  margin-top: 20%;
+}
+
+aside {
+  width: 25%;
+  height: 75%;
+  margin-right: 5%;
+  margin-top: 3%;
+  background-color: #6F6A63;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+h5 {
+  margin: auto;
+  margin-top: 10%;
+  margin-left: 7%;
+  margin-right: 3%;
+  text-align: center;
+  color: white;
+  font-size: 1.1em;
+  font-family: 'Dayrom';
+  font-weight: lighter;
+}
+
+#zozor_classe {
+  display: flex;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 55%;
+  height: 55%;
+  box-shadow: 0px 1px 4px black;
+}
+
+.presentation {
+  margin: auto;
+  margin-left: 4%;
+  margin-right: 4%;
+  text-align: justify;
+  color: white;
+  font-size: 0.8em;
+}
+
+#réseaux {
+  margin-top: 12%;
+  margin-bottom: 5%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.social {
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 95%;
+  height: 95%;
+}
+
+
+
+footer {
+  margin: auto;
+  margin-bottom: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#top {
+  margin: auto;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+h6 {
+  margin: auto;
+  margin-top: 7%;
+  margin-bottom: 4%;
+  font-family: 'Dayrom';
+  font-weight: 200;
+  font-size: 1.4em;
+  text-align: left;
+}
+
+#tweet {
+  margin: auto;
+  width: 33%;
+}
+#hihan {
+  margin-top: 5%;
+}
+
+#mes_photos {
+  margin: auto;
+  margin-top: 2%;
+  width: 33%;
+}
+#photos {
+  margin: auto;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  margin-right: 2%;
+}
+.photo {
+  margin: auto;
+  margin-left: 1%;
+  margin-right: 1%;
+  border: 2px black solid;
+  border-radius: 4px;
+  width: 35%;
+  height: 35%;
+}
+
+#ami_titre {
+  margin: auto;
+  margin-top: 12%;
+  text-align: left;
+  margin-left: 10%;
+}
+#mes_amis {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.listes {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.liste_amis {
+  margin-left: 4%;
+  text-align: left;
+  list-style-image: url("../images/ico_liensexterne.png");
+}
+.ami {
+  font-size: 1.03em;
+  color: #BB352D;
+  text-decoration: none;
+}
