@@ -65,6 +65,7 @@ a:hover, .liens:hover, #this:hover {
   width: 50%;
   margin: auto;
   margin-top: 2%;
+  margin-right: 0;
   display: flex;
   flex-direction: column;
   margin-left: 4%;
@@ -82,7 +83,7 @@ a:hover, .liens:hover, #this:hover {
   align-items: baseline;
   text-align: right;
   margin: auto;
-  margin-right: auto;
+  margin-right: 0;
   margin-left: 5%;
   font-size: 2.7em;
   font-family: 'Ballpark';
@@ -98,13 +99,13 @@ a:hover, .liens:hover, #this:hover {
   margin-top: 0;
   margin-bottom: 4%;
   margin-left: 4%;
-  margin-right: auto;
+  margin-right: 0;
   display: flex;
 }
 
 nav {
   flex: 1;
-  margin-left: auto;
+  margin-bottom: 1%;
   margin-right: 11%
 }
 #menu_principal {
@@ -178,7 +179,6 @@ section {
   margin-top: 2%;
   margin-bottom: 2%;
   display: flex;
-  flex-direction: row;
 }
 
 article {
@@ -239,7 +239,7 @@ h5 {
   color: white;
   font-size: 1.1em;
   font-family: 'Dayrom';
-  font-weight: lighter;
+  font-weight: 1000;
 }
 
 #zozor_classe {
@@ -249,7 +249,8 @@ h5 {
   margin-bottom: 10%;
   width: 55%;
   height: 55%;
-  box-shadow: 0px 1px 4px black;
+  border: 1px black groove;
+  border-radius: 2px;
 }
 
 .presentation {
@@ -259,6 +260,7 @@ h5 {
   text-align: justify;
   color: white;
   font-size: 0.8em;
+  font-weight: 1000;
 }
 
 #réseaux {
@@ -345,7 +347,6 @@ h6 {
   width: 33%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 .listes {
   margin-top: 1%;
@@ -362,4 +363,146 @@ h6 {
   font-size: 1.03em;
   color: #BB352D;
   text-decoration: none;
+}
+
+
+
+@media all and (max-width: 1024px)
+{
+  #banniere_sanfrancisco {
+    width: 70%;;
+    height: 219px;
+    }
+
+    #voir_article {
+      height: 29px;
+      width: 18%;
+    }
+
+    #bloc_page {
+      width: auto;
+    }
+
+    nav {
+      width: auto;
+      text-align: left;
+    }
+
+    #menu_principal {
+      text-align: left;
+      flex-direction: column;
+    }
+
+    nav li {
+      font-weight: 500;
+      padding-left: 4px;
+    }
+
+    .menu {
+      font-size: 1.1em;
+    }
+
+    .menu:hover {
+      border-bottom: 0;
+    }
+
+    a:hover, .liens:hover, #this:hover {
+      color: #99130B;
+      text-decoration: none;
+    }
+
+
+    section {
+      flex-direction:column;
+      margin-right: 4%;
+    }
+
+    article, aside {
+      width: auto;
+      margin-bottom: 15px;
+    }
+
+    aside {
+      margin-left: 7%;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    #bulle {
+      display: none;
+    }
+
+    #zozor_classe {
+      width: 110px;
+      float: right;
+      margin-left: 20px;
+    }
+
+    aside p:last-child {
+      text-align: center;
+    }
+
+    h5 {
+      margin-top: 2%;
+      margin-bottom: 0;
+    }
+
+    .presentation{
+      font-size: 0.9em;
+    }
+
+    #description {
+      margin-top: 0;
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: row;
+    }
+
+    #réseaux {
+      margin-top: auto;
+    }
+
+    .social {
+      width: 50%;
+      height: 50%;
+    }
+
+    footer {
+      margin-left: auto;
+      margin-right: 20%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #tweet {
+      margin-top: 4%;
+      margin-left: 34%;
+      width: 100%;
+    }
+    #hihan {
+      margin-top: 1%;
+    }
+    #tweet h6 {
+      margin-bottom: 0;
+    }
+
+    #ami_titre {
+      margin-left: 7%;
+      margin-top: 7%;
+      margin-bottom: auto;
+    }
+    .listes {
+      margin-top: auto;
+      flex-direction: row;
+    }
+
+    #mes_amis {
+      width: 100%;
+      margin-top: 1%;
+      margin-left: 53%;
+    }
+
+    #liste_amis {
+      margin-left: 17%;
+    }
 }
