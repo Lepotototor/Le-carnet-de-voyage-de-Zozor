@@ -33,6 +33,7 @@ body {
 }
 
 #bloc_page {
+  width: 900px;
   margin: auto;
 }
 
@@ -52,85 +53,69 @@ a:hover, .liens:hover, #this:hover {
 
 
 
-#header {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-end;
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-#entete {
-  width: 50%;
-  margin: auto;
-  margin-top: 2%;
-  margin-right: 0;
-  display: flex;
-  flex-direction: column;
-  margin-left: 4%;
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
 }
 
-#logo_zozor {
-  display: flex;
-  margin-right: 7%;
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 
-#Zozor {
-  align-self: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  text-align: right;
-  margin: auto;
-  margin-right: 0;
-  margin-left: 5%;
-  font-size: 2.7em;
-  font-family: 'Ballpark';
-  font-weight: normal;
-  width: 40%;
+#logo img
+{
+    width: 59px;
+    height: 60px;
 }
-#carnet {
-  width: 60%;
-  font-family: 'Dayrom';
+
+header h1
+{
+    font-family: 'Ballpark', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+header h2
+{
+    font-family: 'Dayrom', serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+  font-family: 'Dayrom', sans-serif;
   font-weight: 500;
-  font-size: 1.5em;
-  margin: auto;
-  margin-top: 0;
-  margin-bottom: 4%;
-  margin-left: 4%;
-  margin-right: 0;
-  display: flex;
+  font-size: 1.2em;
+  margin-right: 15px;
 }
 
-nav {
-  flex: 1;
-  margin-bottom: 1%;
-  margin-right: 11%
-}
-#menu_principal {
-  list-style-type: none;
-  display: flex;
-  margin-bottom: 7%;
-  margin-right: 11%;
-  justify-content: space-around;
-  width: 100%;
-  color: black;
-  text-decoration: none;
-  font-family: 'Dayrom';
-}
-.menu {
-  color: black;
-  text-decoration: none;
-  font-size: 1.3em;
-  font-family: 'Dayrom';
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
 }
 
-
-.liens, #this {
-  color: #BB352D;
-  text-decoration: underline;
-}
 
 #banniere_sanfrancisco {
   width: 950px;
@@ -185,9 +170,7 @@ article {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: auto;
   margin-right: 1%;;
-  margin-left: 7%;
   width: 62%;
 }
 
@@ -216,18 +199,21 @@ article {
   height: 17px;
   display: flex;
   margin-top: 20%;
+  margin-right: 0;
 }
 
 aside {
+  flex: 1.2;
   width: 25%;
   height: 75%;
-  margin-right: 5%;
+  margin: auto;
   margin-top: 3%;
+  margin-left: 0;
   background-color: #6F6A63;
   border-radius: 7px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  padding: 10px;
 }
 
 h5 {
@@ -370,40 +356,52 @@ h6 {
 @media all and (max-width: 1024px)
 {
   #banniere_sanfrancisco {
-    width: 70%;;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 0;
+    width: 95%;
     height: 219px;
     }
 
     #voir_article {
       height: 29px;
-      width: 18%;
+      width: 110px;
     }
 
     #bloc_page {
       width: auto;
     }
 
-    nav {
-      width: auto;
-      text-align: left;
+    #titre_principal {
+      margin-left: 4%;
     }
 
-    #menu_principal {
-      text-align: left;
-      flex-direction: column;
+    nav
+    {
+        width: auto;
+        text-align: left;
+        margin-right: 4%;
     }
 
-    nav li {
-      font-weight: 500;
-      padding-left: 4px;
+    nav ul
+    {
+        justify-content: flex-end;
+        flex-direction: column;
     }
 
-    .menu {
-      font-size: 1.1em;
+    nav li
+    {
+        padding-left: 4px;
     }
 
-    .menu:hover {
-      border-bottom: 0;
+    nav a
+    {
+        font-size: 1.1em;
+    }
+
+    nav a:hover
+    {
+        border-bottom: 0;
     }
 
     a:hover, .liens:hover, #this:hover {
@@ -422,8 +420,12 @@ h6 {
       margin-bottom: 15px;
     }
 
+    article {
+      margin-left: 4%;
+    }
+
     aside {
-      margin-left: 7%;
+      margin-left: 4%;
       margin-right: auto;
       text-align: center;
     }
@@ -438,8 +440,9 @@ h6 {
       margin-left: 20px;
     }
 
-    aside p:last-child {
-      text-align: center;
+    aside p:last-child
+    {
+        text-align: center;
     }
 
     h5 {
@@ -499,7 +502,7 @@ h6 {
     #mes_amis {
       width: 100%;
       margin-top: 1%;
-      margin-left: 53%;
+      margin-left: 50%;
     }
 
     #liste_amis {
